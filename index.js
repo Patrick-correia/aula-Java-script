@@ -14,13 +14,17 @@ let receita = {
 
 // console.log(receita.titulo + receita.vegana);
 
-// Template String com IF Ternário
-// console.log(`
-// Titulo: ${receita.titulo}
-// Vegana: ${receita.vegana ? "sim" : "não"}
-// `);
+// Template String com IF Ternário git 
+ console.log(`
+Titulo: ${receita.titulo}
+nivel de Dificuldade: ${receita.nivelDificuldade}
+Lista de ingrediente: ${receita.listaIngredientes}
+Preparo: ${receita.preparo}
+Vegana: ${receita.vegana ? "sim" : "não"}
+Link do video: ${receita.linkVideo}
+ `);
 
-// console.log("Titulo: "  + receita.titulo + "\nVegana: " + (receita.vegana ? 'sim' : 'não'));
+//console.log("Titulo: "  + receita.titulo + "\nVegana: " + (receita.vegana ? 'sim' : 'não' )+ "\nLink do video: " + receita.linkVideo);
 
 // 2 - criar lista de receitas (array)
 
@@ -105,12 +109,12 @@ const exibirReceitas = () => {
 
 // exibirReceitas();
 
-const deletarReceita = (id) => {
-  // o método filter usa uma comparação (nesse caso mantem todos as receitas com id diferente do parâmetro)
-  receitas = receitas.filter((receita) => receita.id != id);
+// const deletarReceita = (id) => {
+//   // o método filter usa uma comparação (nesse caso mantem todos as receitas com id diferente do parâmetro)
+//   receitas = receitas.filter((receita) => receita.id != id);
 
-  console.log("Receita deletada com sucesso!");
-};
+//   console.log("Receita deletada com sucesso!");
+// };
 
 // deletarReceita(2);
 // exibirReceitas();
